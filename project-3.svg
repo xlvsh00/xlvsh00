@@ -1,0 +1,58 @@
+<svg width="290" height="260" viewBox="0 0 290 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Projekt: wizualizacja danych">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="290" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1117"/><stop offset="1" stop-color="#150b2b"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="32"/></filter>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".35" stop-color="#c4b5fd" stop-opacity=".12"/>
+      <stop offset=".7" stop-color="#8b5cf6" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#d8b4fe" stop-opacity=".45"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".10"/><stop offset="1" stop-color="#a78bfa" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="spec" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="290" height="260" rx="26"/></clipPath>
+    <style>
+      .s{font-family:'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif}
+      .o1{animation:f1 10s ease-in-out infinite alternate}
+      @keyframes f1{to{transform:translate(40px,-40px)}}
+      .sw{animation:w 5s ease-in-out infinite alternate}
+      @keyframes w{to{transform:translateX(10px)}}
+    </style>
+  </defs>
+
+  <rect width="290" height="260" rx="26" fill="url(#bg)"/>
+  <g clip-path="url(#c)">
+    <g filter="url(#blur)"><circle class="o1" cx="150" cy="250" r="70" fill="#7c3aed"/><circle cx="270" cy="30" r="55" fill="#a855f7" fill-opacity=".6"/></g>
+  </g>
+
+  <rect x="6" y="6" width="278" height="248" rx="22" fill="url(#fill)"/>
+  <rect x="6" y="6" width="278" height="100" rx="22" fill="url(#spec)"/>
+  <rect x="6.5" y="6.5" width="277" height="247" rx="21.5" stroke="url(#rim)"/>
+
+  <g class="s">
+    <rect x="26" y="26" width="146" height="22" rx="11" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".2"/>
+    <text x="99" y="41" font-size="10.5" font-weight="600" fill="#d8c8fb" text-anchor="middle">Python · matplotlib</text>
+
+    <text x="26" y="80" font-size="19" font-weight="700" fill="#fff">Wizualizacja</text>
+    <text x="26" y="103" font-size="19" font-weight="700" fill="#fff">danych</text>
+    <text x="26" y="128" font-size="12" fill="#b9a5e6">Wykresy i opowiadanie historii na</text>
+    <text x="26" y="145" font-size="12" fill="#b9a5e6">otwartych zbiorach danych.</text>
+  </g>
+
+  <!-- two distributions -->
+  <g>
+    <path d="M26 226 C70 226 84 168 118 168 S166 226 210 226 Z" fill="#7c3aed" fill-opacity=".35" stroke="#a78bfa" stroke-width="1.8"/>
+    <g class="sw">
+      <path d="M60 226 C104 226 118 160 152 160 S200 226 244 226 Z" fill="#d8b4fe" fill-opacity=".3" stroke="#e9d5ff" stroke-width="1.8"/>
+    </g>
+    <line x1="26" y1="226" x2="262" y2="226" stroke="#fff" stroke-opacity=".2"/>
+    <line x1="118" y1="160" x2="118" y2="226" stroke="#fff" stroke-opacity=".25" stroke-dasharray="3 3"/>
+    <line x1="152" y1="152" x2="152" y2="226" stroke="#fff" stroke-opacity=".25" stroke-dasharray="3 3"/>
+  </g>
+</svg>

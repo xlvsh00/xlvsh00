@@ -1,0 +1,91 @@
+<svg width="900" height="250" viewBox="0 0 900 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jak pracuję z danymi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1117"/><stop offset="1" stop-color="#120a24"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="45"/></filter>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".35" stop-color="#c4b5fd" stop-opacity=".12"/>
+      <stop offset=".7" stop-color="#8b5cf6" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#d8b4fe" stop-opacity=".45"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".10"/><stop offset="1" stop-color="#a78bfa" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="spec" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="900" height="250" rx="28"/></clipPath>
+    <style>
+      .s{font-family:'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif}
+      .o1{animation:f1 10s ease-in-out infinite alternate}
+      .o2{animation:f2 12s ease-in-out infinite alternate}
+      @keyframes f1{to{transform:translate(90px,20px)}}
+      @keyframes f2{to{transform:translate(-90px,-20px)}}
+      .flow{stroke-dasharray:5 6;animation:fl 1.2s linear infinite}
+      @keyframes fl{to{stroke-dashoffset:-22}}
+    </style>
+  </defs>
+
+  <rect width="900" height="250" rx="28" fill="url(#bg)"/>
+  <g clip-path="url(#c)">
+    <g filter="url(#blur)">
+      <circle class="o1" cx="100" cy="240" r="90" fill="#7c3aed" fill-opacity=".85"/>
+      <circle class="o2" cx="800" cy="10" r="100" fill="#a855f7" fill-opacity=".75"/>
+    </g>
+  </g>
+
+  <text class="s" x="40" y="52" font-size="12" font-weight="600" letter-spacing="5" fill="#a78bfa">WORKFLOW</text>
+
+  <!-- connectors -->
+  <g stroke="#c4b5fd" stroke-opacity=".55" stroke-width="1.5" stroke-linecap="round">
+    <line class="flow" x1="170" y1="140" x2="202" y2="140"/>
+    <line class="flow" x1="342" y1="140" x2="374" y2="140"/>
+    <line class="flow" x1="514" y1="140" x2="546" y2="140"/>
+    <line class="flow" x1="686" y1="140" x2="718" y2="140"/>
+  </g>
+
+  <g class="s">
+    <g>
+      <rect x="30" y="85" width="140" height="110" rx="22" fill="url(#fill)"/>
+      <rect x="30" y="85" width="140" height="48" rx="22" fill="url(#spec)"/>
+      <rect x="30.5" y="85.5" width="139" height="109" rx="21.5" stroke="url(#rim)"/>
+      <text x="50" y="114" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">01</text>
+      <text x="50" y="145" font-size="17" font-weight="700" fill="#fff">Zbieranie</text>
+      <text x="50" y="168" font-size="12" fill="#b9a5e6">SQL · API · pliki</text>
+    </g>
+    <g>
+      <rect x="202" y="85" width="140" height="110" rx="22" fill="url(#fill)"/>
+      <rect x="202" y="85" width="140" height="48" rx="22" fill="url(#spec)"/>
+      <rect x="202.5" y="85.5" width="139" height="109" rx="21.5" stroke="url(#rim)"/>
+      <text x="222" y="114" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">02</text>
+      <text x="222" y="145" font-size="17" font-weight="700" fill="#fff">Czyszczenie</text>
+      <text x="222" y="168" font-size="12" fill="#b9a5e6">pandas · walidacja</text>
+    </g>
+    <g>
+      <rect x="374" y="85" width="140" height="110" rx="22" fill="url(#fill)"/>
+      <rect x="374" y="85" width="140" height="48" rx="22" fill="url(#spec)"/>
+      <rect x="374.5" y="85.5" width="139" height="109" rx="21.5" stroke="url(#rim)"/>
+      <text x="394" y="114" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">03</text>
+      <text x="394" y="145" font-size="17" font-weight="700" fill="#fff">Eksploracja</text>
+      <text x="394" y="168" font-size="12" fill="#b9a5e6">EDA · statystyka</text>
+    </g>
+    <g>
+      <rect x="546" y="85" width="140" height="110" rx="22" fill="url(#fill)"/>
+      <rect x="546" y="85" width="140" height="48" rx="22" fill="url(#spec)"/>
+      <rect x="546.5" y="85.5" width="139" height="109" rx="21.5" stroke="url(#rim)"/>
+      <text x="566" y="114" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">04</text>
+      <text x="566" y="145" font-size="17" font-weight="700" fill="#fff">Wizualizacja</text>
+      <text x="566" y="168" font-size="12" fill="#b9a5e6">Power BI · matplotlib</text>
+    </g>
+    <g>
+      <rect x="718" y="85" width="152" height="110" rx="22" fill="#a855f7" fill-opacity=".16"/>
+      <rect x="718" y="85" width="152" height="48" rx="22" fill="url(#spec)"/>
+      <rect x="718.5" y="85.5" width="151" height="109" rx="21.5" stroke="url(#rim)"/>
+      <text x="738" y="114" font-size="11" font-weight="700" fill="#d8b4fe" letter-spacing="2">05</text>
+      <text x="738" y="145" font-size="17" font-weight="700" fill="#fff">Wnioski</text>
+      <text x="738" y="168" font-size="12" fill="#cdbff0">rekomendacje dla biznesu</text>
+    </g>
+  </g>
+</svg>

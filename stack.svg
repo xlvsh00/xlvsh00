@@ -1,0 +1,111 @@
+<svg width="900" height="400" viewBox="0 0 900 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Czego się uczę">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1117"/><stop offset="1" stop-color="#170d2e"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="50"/></filter>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".35" stop-color="#c4b5fd" stop-opacity=".12"/>
+      <stop offset=".7" stop-color="#8b5cf6" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#d8b4fe" stop-opacity=".45"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".10"/><stop offset="1" stop-color="#a78bfa" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="spec" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".15"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7c3aed"/><stop offset="1" stop-color="#d8b4fe"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="900" height="400" rx="28"/></clipPath>
+    <style>
+      .s{font-family:'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif}
+      .o1{animation:f1 11s ease-in-out infinite alternate}
+      .o2{animation:f2 13s ease-in-out infinite alternate}
+      @keyframes f1{to{transform:translate(80px,-30px)}}
+      @keyframes f2{to{transform:translate(-90px,30px)}}
+      .b{transform-box:fill-box;transform-origin:left center;animation:g 1.4s ease-out backwards}
+      .b1{animation-delay:.1s}.b2{animation-delay:.25s}.b3{animation-delay:.4s}
+      .b4{animation-delay:.55s}.b5{animation-delay:.7s}.b6{animation-delay:.85s}
+      @keyframes g{from{transform:scaleX(0)}}
+    </style>
+  </defs>
+
+  <rect width="900" height="400" rx="28" fill="url(#bg)"/>
+  <g clip-path="url(#c)">
+    <g filter="url(#blur)">
+      <circle class="o1" cx="120" cy="380" r="110" fill="#7c3aed" fill-opacity=".9"/>
+      <circle class="o2" cx="800" cy="60" r="120" fill="#a855f7" fill-opacity=".7"/>
+      <circle cx="450" cy="200" r="80" fill="#3b1580" fill-opacity=".7"/>
+    </g>
+  </g>
+
+  <text class="s" x="40" y="52" font-size="12" font-weight="600" letter-spacing="5" fill="#a78bfa">CZEGO SIĘ UCZĘ</text>
+  <text class="s" x="860" y="52" font-size="12" fill="#8f7bc4" text-anchor="end">na jakim jestem etapie</text>
+
+  <g class="s">
+    <!-- SQL -->
+    <rect x="30" y="72" width="270" height="140" rx="24" fill="url(#fill)"/>
+    <rect x="30" y="72" width="270" height="60" rx="24" fill="url(#spec)"/>
+    <rect x="30.5" y="72.5" width="269" height="139" rx="23.5" stroke="url(#rim)"/>
+    <text x="54" y="112" font-size="20" font-weight="700" fill="#fff">SQL</text>
+    <text x="54" y="134" font-size="12" fill="#b9a5e6">PostgreSQL · JOIN-y · funkcje okna</text>
+    <text x="276" y="112" font-size="13" font-weight="600" fill="#d8c8fb" text-anchor="end">podstawy+</text>
+    <rect x="54" y="170" width="222" height="6" rx="3" fill="#fff" fill-opacity=".09"/>
+    <rect class="b b1" x="54" y="170" width="122" height="6" rx="3" fill="url(#bar)"/>
+
+    <!-- Python -->
+    <rect x="315" y="72" width="270" height="140" rx="24" fill="url(#fill)"/>
+    <rect x="315" y="72" width="270" height="60" rx="24" fill="url(#spec)"/>
+    <rect x="315.5" y="72.5" width="269" height="139" rx="23.5" stroke="url(#rim)"/>
+    <text x="339" y="112" font-size="20" font-weight="700" fill="#fff">Python</text>
+    <text x="339" y="134" font-size="12" fill="#b9a5e6">pandas · NumPy · Jupyter</text>
+    <text x="561" y="112" font-size="13" font-weight="600" fill="#d8c8fb" text-anchor="end">podstawy</text>
+    <rect x="339" y="170" width="222" height="6" rx="3" fill="#fff" fill-opacity=".09"/>
+    <rect class="b b2" x="339" y="170" width="100" height="6" rx="3" fill="url(#bar)"/>
+
+    <!-- Power BI -->
+    <rect x="600" y="72" width="270" height="140" rx="24" fill="url(#fill)"/>
+    <rect x="600" y="72" width="270" height="60" rx="24" fill="url(#spec)"/>
+    <rect x="600.5" y="72.5" width="269" height="139" rx="23.5" stroke="url(#rim)"/>
+    <text x="624" y="112" font-size="20" font-weight="700" fill="#fff">Power BI</text>
+    <text x="624" y="134" font-size="12" fill="#b9a5e6">pierwsze dashboardy · DAX</text>
+    <text x="846" y="112" font-size="13" font-weight="600" fill="#d8c8fb" text-anchor="end">poznaję</text>
+    <rect x="624" y="170" width="222" height="6" rx="3" fill="#fff" fill-opacity=".09"/>
+    <rect class="b b3" x="624" y="170" width="78" height="6" rx="3" fill="url(#bar)"/>
+  </g>
+
+  <g class="s">
+    <!-- Excel -->
+    <rect x="30" y="228" width="270" height="140" rx="24" fill="url(#fill)"/>
+    <rect x="30" y="228" width="270" height="60" rx="24" fill="url(#spec)"/>
+    <rect x="30.5" y="228.5" width="269" height="139" rx="23.5" stroke="url(#rim)"/>
+    <text x="54" y="268" font-size="20" font-weight="700" fill="#fff">Excel</text>
+    <text x="54" y="290" font-size="12" fill="#b9a5e6">tabele przestawne · Power Query</text>
+    <text x="276" y="268" font-size="13" font-weight="600" fill="#d8c8fb" text-anchor="end">dobrze</text>
+    <rect x="54" y="326" width="222" height="6" rx="3" fill="#fff" fill-opacity=".09"/>
+    <rect class="b b4" x="54" y="326" width="167" height="6" rx="3" fill="url(#bar)"/>
+
+    <!-- Statystyka -->
+    <rect x="315" y="228" width="270" height="140" rx="24" fill="url(#fill)"/>
+    <rect x="315" y="228" width="270" height="60" rx="24" fill="url(#spec)"/>
+    <rect x="315.5" y="228.5" width="269" height="139" rx="23.5" stroke="url(#rim)"/>
+    <text x="339" y="268" font-size="20" font-weight="700" fill="#fff">Statystyka</text>
+    <text x="339" y="290" font-size="12" fill="#b9a5e6">statystyka opisowa · testy</text>
+    <text x="561" y="268" font-size="13" font-weight="600" fill="#d8c8fb" text-anchor="end">poznaję</text>
+    <rect x="339" y="326" width="222" height="6" rx="3" fill="#fff" fill-opacity=".09"/>
+    <rect class="b b5" x="339" y="326" width="78" height="6" rx="3" fill="url(#bar)"/>
+
+    <!-- dbt / Git -->
+    <rect x="600" y="228" width="270" height="140" rx="24" fill="url(#fill)"/>
+    <rect x="600" y="228" width="270" height="60" rx="24" fill="url(#spec)"/>
+    <rect x="600.5" y="228.5" width="269" height="139" rx="23.5" stroke="url(#rim)"/>
+    <text x="624" y="268" font-size="20" font-weight="700" fill="#fff">Git · dbt</text>
+    <text x="624" y="290" font-size="12" fill="#b9a5e6">Git na co dzień, dbt w planach</text>
+    <text x="846" y="268" font-size="13" font-weight="600" fill="#d8c8fb" text-anchor="end">w planach</text>
+    <rect x="624" y="326" width="222" height="6" rx="3" fill="#fff" fill-opacity=".09"/>
+    <rect class="b b6" x="624" y="326" width="40" height="6" rx="3" fill="url(#bar)"/>
+  </g>
+</svg>
